@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mixed Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Gallery</h1>
+
+  <div class="gallery">
+    <!-- Local images -->
+    <img src="3a35f126-9940-45d4-853d-c3827da5b057.jpg" alt="Local Image 1">
+    <img src="5c553d9c-77d6-430d-a71a-54ab85e77bcb.jpg" alt="Local Image 2">
+    <img src="5777be0c-91e1-4c8f-93d6-d970472a0b65.jpg" alt="Local Image 3">
+    <img src="5201564c-7e73-4f1c-be3b-7be572ba4a7a.jpg" alt="Local Image 3">
+
+    <!-- Online images -->
+    <img src="https://unsplash.com/s/photos/free-images" alt="Online Image 1">
+    <img src="https://source.unsplash.com/300x200/?ocean" alt="Online Image 2">
+    <img src="https://source.unsplash.com/300x200/?night" alt="Online Image 3">
+  </div>
+
+</body>
+</html>
